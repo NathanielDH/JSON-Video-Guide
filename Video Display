@@ -1,4 +1,5 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
   "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
   "height": 400,
   "width": 280,
@@ -51,7 +52,7 @@
           {
             "elmType": "img",
             "attributes": {
-              "src": "[$Image.serverRelativeUrl]"
+              "src": "[$Image.%2Fsites%2FNAVWAR_NIWC_Atlantic%2FSiteAssets]"
             },
             "style": {
               "float": "left",
@@ -336,178 +337,5 @@
                       "margin-left": "10px",
                       "display": "span",
                       "background-color": "transparent",
-                      "border-radius": "4px"
-                    },
-                    "attributes": {
-                      "title": "Join the conversation",
-                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black",
-                      "href": "=if([$Yammer] == '', 'https://web.yammer.com/main/topics/eyJfdHlwZSI6IlRvcGljIiwiaWQiOiI2NzYwNDM4OTg4OCJ9/all', [$Yammer])",
-                      "target": "_blank"
-                    },
-                    "children": [
-                      {
-                        "elmType": "span",
-                        "style": {
-                          "color": "#0082f0",
-                          "align-content": "center",
-                          "padding": "6px",
-                          "padding-left": "12px",
-                          "white-space": "normal"
-                        },
-                        "attributes": {
-                          "iconName": "YammerLogo",
-                          "class": "ms-font-xl"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "elmType": "span",
-                "children": [
-                  {
-                    "elmType": "button",
-                    "customRowAction": {
-                      "action": "setValue",
-                      "actionInput": {
-                        "User": "=if(indexOf([$User.email] , @me) > -1 , removeFrom([$User.email] , @me) , appendTo([$User.email] , @me))"
-                      }
-                    },
-                    "style": {
-                      "position": "absolute",
-                      "right": "45px",
-                      "top": "350px",
-                      "width": "40px",
-                      "margin-left": "10px",
-                      "display": "span",
-                      "background-color": "transparent",
-                      "border-radius": "4px"
-                    },
-                    "attributes": {
-                      "title": "",
-                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black"
-                    },
-                    "children": [
-                      {
-                        "elmType": "span",
-                        "style": {
-                          "color": "#0082f0",
-                          "align-content": "left",
-                          "justify-content": "left",
-                          "padding": "4px",
-                          "white-space": "normal"
-                        },
-                        "attributes": {
-                          "iconName": "=if(indexOf([$User.email] , @me) > -1 ,'LikeSolid', 'Like')",
-                          "class": "ms-font-xl"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "elmType": "div",
-                    "attributes": {
-                      "class": "sp-row-listPadding"
-                    },
-                    "style": {
-                      "position": "absolute",
-                      "left": "230px",
-                      "top": "358px",
-                      "font-size": "18px"
-                    },
-                    "txtContent": "=if(length([$User]) > 0, length([$User]), ''"
-                  }
-                ]
-              },
-              {
-                "elmType": "span",
-                "children": [
-                  {
-                    "elmType": "button",
-                    "customRowAction": {
-                      "action": "share"
-                    },
-                    "style": {
-                      "position": "absolute",
-                      "left": "150px",
-                      "top": "350px",
-                      "width": "40px",
-                      "margin-left": "10px",
-                      "display": "span",
-                      "background-color": "transparent",
-                      "border-radius": "4px"
-                    },
-                    "attributes": {
-                      "title": "Share it",
-                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black"
-                    },
-                    "children": [
-                      {
-                        "elmType": "span",
-                        "style": {
-                          "color": "#0082f0",
-                          "align-content": "left",
-                          "justify-content": "left",
-                          "padding": "4px",
-                          "white-space": "normal"
-                        },
-                        "attributes": {
-                          "iconName": "Share",
-                          "class": "ms-font-xl"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "elmType": "span",
-                "children": [
-                  {
-                    "elmType": "a",
-                    "customRowAction": {
-                      "action": "defaultClick"
-                    },
-                    "style": {
-                      "position": "absolute",
-                      "left": "70px",
-                      "top": "348px",
-                      "width": "40px",
-                      "margin-left": "10px",
-                      "display": "span",
-                      "background-color": "transparent",
-                      "border-radius": "4px"
-                    },
-                    "attributes": {
-                      "title": "Join the conversation",
-                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black",
-                      "href": "[$Learning]",
-                      "target": "_blank"
-                    },
-                    "children": [
-                      {
-                        "elmType": "span",
-                        "style": {
-                          "color": "#0082f0",
-                          "align-content": "center",
-                          "padding": "6px",
-                          "padding-left": "12px",
-                          "white-space": "normal"
-                        },
-                        "attributes": {
-                          "iconName": "D365TalentLearn",
-                          "class": "ms-font-xl"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-}
+                      "border-radius": "4px"}}]}]}]}]}}
+                    
