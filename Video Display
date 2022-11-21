@@ -401,8 +401,8 @@
                         "elmType": "span",
                         "style": {
                           "color": "#0082f0",
-                          "align-content": "left",
-                          "justify-content": "left",
+                          "align-content": "right",
+                          "justify-content": "right",
                           "padding": "4px",
                           "white-space": "normal"
                         },
