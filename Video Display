@@ -418,15 +418,18 @@
               {
                 "elmType": "span",
                 "children": [
+              {
+                "elmType": "span",
+                "children": [
                   {
-                    "elmType": "a",
+                    "elmType": "button",
                     "customRowAction": {
-                      "action": "defaultClick"
+                      "action": "share"
                     },
                     "style": {
                       "position": "absolute",
-                      "left": "70px",
-                      "top": "348px",
+                      "left": "150px",
+                      "top": "350px",
                       "width": "40px",
                       "margin-left": "10px",
                       "display": "span",
@@ -434,23 +437,21 @@
                       "border-radius": "4px"
                     },
                     "attributes": {
-                      "title": "Join the conversation",
-                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black",
-                      "href": "[$Learning]",
-                      "target": "_blank"
+                      "title": "Share it",
+                      "class": "sp-row-button sp-row-button ms-bgColor-purpleDark--hover ms-fontWeight-semibold ms-fontColor-black"
                     },
                     "children": [
                       {
                         "elmType": "span",
                         "style": {
                           "color": "#0082f0",
-                          "align-content": "center",
-                          "padding": "6px",
-                          "padding-left": "12px",
+                          "align-content": "left",
+                          "justify-content": "left",
+                          "padding": "4px",
                           "white-space": "normal"
                         },
                         "attributes": {
-                          "iconName": "D365TalentLearn",
+                          "iconName": "Share",
                           "class": "ms-font-xl"
                         }
                       }
@@ -464,5 +465,5 @@
       }
     ]
   }]
-}}
+}]}}
 
