@@ -49,7 +49,7 @@
           {
             "elmType": "img",
             "attributes": {
-              "src": "[$Image.serverRelativeUrl]"
+              "src": "[$Image.http://www.ezcopy.net/wp-content/uploads/2018/02/upload-1.png]"
             },
             "style": {
               "float": "left",
