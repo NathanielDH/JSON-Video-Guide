@@ -52,7 +52,7 @@
           {
             "elmType": "img",
             "attributes": {
-              "src": "[$Image.%2Fsites%2FNAVWAR_NIWC_Atlantic%2FSiteAssets]"
+              "src": "[$Image.serverRelativeUrl]]"
             },
             "style": {
               "float": "left",
